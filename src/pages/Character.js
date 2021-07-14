@@ -3,7 +3,7 @@ import getData from '../utils/getData';
 
 const Character = async () => {
   const id = getHash();
-  const character = await getData( id );
+  const character = await getData(id);
 
   const view = `
     <div class="Characters-inner">
@@ -24,6 +24,6 @@ const Character = async () => {
   `;
 
   return view;
-}
+};
 
 export default Character;
